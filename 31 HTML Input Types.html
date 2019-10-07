@@ -1,0 +1,155 @@
+<h1>Tell Us More About Yourself</h1>
+
+
+
+<!--<input type="text">; one line text input field-->
+<form>
+	First Name:<br>
+	<input type="text" name="firstname"><br>
+	Last Name:<br>
+	<input type="text" name="lastname">
+</form>
+
+<!--<input type="password">; password field-->
+<form>
+	User Name:<br>
+	<input type="text" name="username"><br>
+	User Password:<br>
+	<input type="password" name="psw">
+</form>
+
+<!--<input type="submit">; button for submitting form data to form handler, form handler is typically a server pg with a script for processing input data and is specified in the form's action att-->
+<form action="/action_page.php">
+	First Name:<br>
+	<input type="text" name="firstname" value="Briana"><br>
+	Last Name:<br>
+	<input type="text" name="lastname" value="Hunter"><br><br>
+	<input type="submit" value="Submit">
+</form>
+<!--omitting submit buttons value attribute gives button default text-->
+
+<!--<input type="reset">; reset button to reset all from values to default values-->
+<form action="/action_page.php">
+	Email:<br>
+	<input type="text" name="firstname" value="Briana@html.com"><br>
+	Password:<br>
+	<input type="text" name="lastname" value="******"><br><br>
+	<input type="submit" value="Submit">
+	<input type="reset">
+</form>
+
+<!--<input type="radio">; radio button (can only select one choice)-->
+<form>
+	<input type="radio" name="gender" value="male" checked> Male<br>
+	<input type="radio" name="gender" value="female"> Female<br>
+	<input type="radio" name="gender" value="other"> Other
+</form>
+
+<!--<input type="checkbox">; checkbox (can select zero or more opts)-->
+<form>
+	<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+	<input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+</form>
+
+<!--<input type="button">; button-->
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+<!--<input type="color">; fields that should contain a color; depending on browser support, color picker shows in input field-->
+<form>
+	Select your favorite cololr:
+	<input type="color" name="favcolor">
+</form>
+
+<!--<input type="date">; input fields with date, depending on browser support, date picker shows in input field-->
+<form>
+	Birthday:
+	<input type="date" name="bday">
+</form>
+<!--min and max att can add date restrictions-->
+<form>
+	Enter a date before 1980-01-01:
+	<input type="date" name="bday" max="1979-12-31"><br>
+	Enter a date after 2000-01-01:
+	<input type="date" name="bday" min="2000-01-02"><br>
+</form>
+
+<!--<input type="datetime-local">; date/time input field with no time zone, depending on browser support, date pick shows in input field-->
+<form>
+	Birthday (date and time):
+	<input type="datetime-local" name="bdaytime">
+</form>
+
+<!--<input type="email">; email address input field, depending on browser support, address can be automatically validated when submitted, some smartphones recognize and add .com to keyboard-->
+<form>
+	Email:
+	<input type="email" name="email">
+</form>
+
+<!--<input type="file">; file select field & browse button for upload-->
+<form>
+	Select a file: <input type="file" name="myFile">
+</form>
+
+<!--<input type="month">; select month and year, depending on browser support, date picker can show-->
+<form>
+	Birthday (month and year):
+	<input type="month" name="bdaymonth">
+</form>
+
+<!--<input type="number">; numeric input, can restrict accepted numbers, below shoes values 1 to 5 allowance-->
+<form>
+	Quantity (between 1 and 5):
+	<input type="number" name="quantity" min="1" max="5">
+</form>
+
+<!--Input Restrictions for Input Fields
+Attribute 		Description
+disabled		input field disabled
+max				maximum value
+maxlength		maximum number of character
+min 			minimum value
+pattern 		regular expression to check input value against
+readonly 		read only (cannot be changed)
+required 		field required (must be filled out)
+size 			width (in characers)
+step			legal number intervals
+value 			default value-->
+<form>
+	Quantity:
+	<input type="number" name="points" min="0" max="100" step="10" value="30">
+</form>
+
+<!--<input type="range">; entering a number whose exact value is unimportant (ex. slider control), default range 0 to 100; min, max, step attributes can restrict what numbers are accepted-->
+<form>
+	<input type="range" name="points" min="0" max="10">
+</form>
+
+<!--<input type="search">; search field (behaves like reg text field)-->
+<form>
+	Search Google:
+	<input type="search" name="googlesearch">
+</form>
+
+<!--<input type="tel">; contains phone number-->
+<form>
+	Telephone:
+	<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+
+<!--<input type="time">; select a time (no time zone), depending on browser support, time picker can show-->
+<form>
+	Select a time:
+	<input type="time" name="usr_time">
+</form>
+
+<!--<input type="url">; contains URL address, depending on browser support, url field can be auto validated when submitted, some smartphones recognize the url type & adds .com to keyboard-->
+<form>
+	Add your homepage:
+	<input type="url" name="homepage">
+</form>
+
+<!--<input type="week">; select a week and year, depending on browser support, a date picker can show-->
+<form>
+	Select a week:
+	<input type="week" name="week_year">
+</form>

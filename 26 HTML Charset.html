@@ -1,0 +1,88 @@
+<!--HTML Encoding (Character Sets); to display an HTML page correctly, a web browser must know which character set (character encoding) to use. 
+* Character Encoding Standard (aka character set)
+	>ASCII was the first, defined 128 different alphanumeric characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ < >
+	>ISO-8859-1  was the default character set for HTML 4; also supported 256 different character codes
+	>ANSI (Windows-1252) orig Windows character set, identical to ISO-8859-1, except that ANSI has 32 extra characters
+	>ANSI and ISO-8859-1 were limited, HTML 4 also supported UTF-8
+	>UTF-8 is the default character encoding for HTML5-->
+
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+<!--for HTML4-->
+
+<meta charset="utf-8">
+<!--for HTML5-->
+
+<!--Character Set differences
+Numb 	ASCII 	ANSI 	8859 	UTF-8 	Description
+32										space
+33		!		!		!		!		exclamation mark
+34		"		"		"		"		quotation mark
+35		#		#		#		#		number sign
+36		$		$		$		$		dollar sign
+37		%		%		%		%		percent sign
+38 		&		&		&		&		ampersand
+39		'		'		'		'		apostrophe
+40 		(		(		(		(		left parenthesis
+41		)		)		)		)		right parenthesis
+42		*		*		*		*		asterisk
+43		+		+		+		+		plus sign
+44		,		,		,		,		comma
+45		-		-		-		-		hyphen minus
+46		.		.		.		.		full stop
+47		/		/		/		/		solidus
+48		0		0		0		0		digit zero
+49		1		1		1		1		digit one
+50		2		2		2		2		digit two
+51		3		3		3		3		digit three
+52		4		4		4		4		digit four
+53		5		5		5		5		digit five
+54		6		6		6		6		digit six
+55		7		7		7		7		digit seven
+56		8		8		8		8		digit eight
+57		9		9		9		9		digit nine
+58		:		:		:		:		colon
+59		;		;		;		;		semicolon
+60		<		<		<		<		less than sign
+61		=		=		=		=		equals sign
+62		>		>		>		>		greater than sign
+63		?		?		?		?		question mark
+64		@		@		@		@		commercial at
+65		A 		A 		A 		A 		Latin capital letter A
+
+91 		[ 		[ 		[ 		[ 		left square bracket
+92		\		\		\		\		reverse solidus
+93		] 		] 		] 		]		right square bracket
+94		^		^		^		^		circumflex accent
+95		_		_		_		_		low line
+96		`		`		`		`		grave accent
+97		a 		a 		a 		a 		Latin small letter a
+
+123		{ 		{ 		{		{		left curly bracket
+124		|		|		|		|		vertical line
+125		}		}		}		}		right curly bracket
+126		~		~		~		~		tilde
+127		DEL -->
+
+<!--ASCII Character Set
+	values from 0 to 31 (and 127) for control characters
+	values from 32 to 126 for letters, digits, and symbols
+	doesn't use the values from 128 to 255-->
+
+<!--ANSI Character Set (Windows-1252)
+	identical to ASCII for values from 0 to 127
+	propietary set of characters for the values from 128 to 159
+	identical to UTF-8 for values from 160 to 255-->
+
+<!--ISO-8859-1 Character Set
+	identical to ASCII for values from 0 to 127
+	doesn't use values from 128 to 159
+	identical to UTF-8 for values from 160 to 255-->
+
+<!--UTF-8 Character Set
+	identical to ASCII for values from 0 to 127
+	doesn't use values from 128 to 159
+	identical to both ANSI and 8859-1 for v alues from 160 to 255
+	continues from the value 256 with 10000+ different characters-->
+
+<!--@charset CSS Rule; specifies character encoding used in a style sheet-->
+@charset "UTF-8";

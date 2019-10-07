@@ -1,0 +1,70 @@
+<!--HTML <head> Element; container for metadata; between <html> & <body> tag
+	HTML metadata is data about HTML document; metadata not displayed & typically defines document title, character set, styles, links, scripts, and other meta info, ex: <title> <style> <meta> <link> <script> <base>-->
+
+<!DOCTYPE html>
+<html> 
+
+<head>
+	<title>The Bougie Hippy</title>
+</head>
+
+<body>
+style is eternal
+</body>
+
+</html>
+<!--HTML <title> Element; document title; required in HTML/XHTML docs; title for pg added to favs; title for pg in search engine results-->
+
+<style>
+	body {background-color: powderblue;}
+	h1 {color: purple;}
+	p {color: blue;}
+</style>
+<!--HTML <style> Element; defines style info for single HTML pg-->
+
+<link rel="stylesheet" href="mystyle.css">
+<!--HTML <link> Element; link to external style sheets-->
+
+<!--HTML <meta> Element; character set used, pg description, keywords, author & other metadata; metadata used by browsers (how to display content, search engines (keywords) and web services-->
+<meta charset="utf-8">
+<!--character set used-->
+
+<meta name="description" content="Free Web tutorials">
+<!--web pg description-->
+
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">
+<!--keywords for search engines-->
+
+<meta name="author" content="John Doe">
+<!--author of pg-->
+
+<meta http-equiv="refresh" content="30">
+<!--refresh doc every 30 seconds-->
+
+<meta charset="utf-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">
+<meta name="author" content="John Doe">
+
+
+
+
+<!-- <meta> viewport element gives browser instructions on how to ctrl pg dimensions and scaling; width=device-width sets width of pg to follow device screen width; initial-scale=1.0 sets initial zoom lvl when pg first loaded -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--HTML <script> element; client-side JavaScripts-->
+<script>
+function myFunction {
+	document.getElementById("demo").innerHTML="Hello JavaScript!";
+}
+</script>
+
+<!--HTML <base> element; base URL and base target for all relative pg URLs-->
+<base href="https://www.w3schools.com/images/" target="_blank">
+
+<!--Omitting <html> <head> <body>; can be omitted per HTML5 standard (not recommended but common practice, can crash DOM or XML software and produce errors in old browsers)-->
+<!DOCTYPE html>
+<title>The Bougie Hippy</title>
+
+<h1>Fashion</h1>
+<p>My personal looks, fashion news, sustainability, and product/event reviews.</p>

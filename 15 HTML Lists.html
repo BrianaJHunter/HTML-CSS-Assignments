@@ -1,0 +1,167 @@
+<!--Unordered HTML List
+	starts with <ul> tag
+	<li> - list item; marked with bullets by default-->
+<ul>
+	<li>Coffee</li><br>
+	<li>Tea</li><br>
+	<li>Milk</li><br>
+</ul>
+
+<!--Unordered HTML List - Choose List Item Marker
+	CSS list-style-type property; defines style of list item marker
+		disc - bullt item marker (default)
+		circle - circle list item marker
+		square - square list item marker
+		none - unmarked list items-->
+<ul style="list-style-type: disc;">
+	<li>Coffee</li><br>
+	<li>Tea</li><br>
+	<li>Milk</li><br>
+</ul>
+<!--disc-->
+<ul style="list-style-type: circle;">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+<!--circle-->
+<ul style="list-style-type: square">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+<!--square-->
+<ul style="list-style-type: none;">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+<!--none-->
+
+
+
+
+<!--Ordered HTML List
+	starts with <ol> tag
+	<li> tag - list items (marked with numbers by default-->
+<ol>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+
+<!--Ordered HTML List - Type Attribute
+	type attribute of <ol> tag defines type of list item marker
+		type="1" - number list items (default)
+		type="A" - uppercase letter list items
+		type="a" - lowercase letter list items
+		type="I" - uppercase roman number list items
+		type="i" - lowercase roman number list items -->
+<ol type="1">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+<!--numbers-->
+<ol type="A">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+<!--uppercase letters-->
+<ol type="a">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+<!--lowercase letters-->
+<ol type="I">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+<!--uppercase roman numbers-->
+<ol type="i">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+<!--lowercase roman numbers-->
+
+
+
+
+<!--HTML Description Lists
+	<dl> tag defines decription list; list of terms with description of each term
+	<dt> term name
+	<dd> each term-->
+<d1>
+	<dt>Coffee</dt>
+	<dd>- black hot drink</dd>
+	<dt>Milk</dt>
+	<dd>- white cold drink</dd>
+</d1>
+
+<!--Nested HTML Lists; lists inside lists-->
+<ul>
+	<li>Coffee</li>
+	<li>Tea
+		<ul>
+			<li>Black tea</li>
+			<li>Green tea</li>
+		</ul>
+	</li>
+	<li>Milk</li>
+</ul>
+
+<!--Control List Counting
+	use start attribute; start counting from specified number-->
+<ol style="50">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+
+
+
+<!--Horizontal List with CSS; horizontal list, creates nav menu-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111111;
+}
+</style>
+</head>
+<body>
+	
+<ul>
+	<li><a href="#home">Home</a></li>
+	<li><a href="#fashion">Fashion</a></li>
+	<li><a href="#lifestyle">Lifestyle</a></li>
+	<li><a href="#sustainability">Sustainability</a></li>
+</ul>
+
+</body>
+</html>

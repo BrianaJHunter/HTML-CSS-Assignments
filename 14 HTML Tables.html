@@ -1,0 +1,135 @@
+<!-- HTML table is defined with <table> tag; 
+	<tr> tag - table row
+	<th> tag - table header (bold & centered by default)
+	<td> tag - table data/cell -->
+<table style="width:100%">
+	<tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+		<th>Age</th>
+	</tr>
+	<tr>
+		<td>Jill</td>
+		<td>Eve</td>
+		<td>50</td>
+	</tr>
+	<tr>
+		<td>Eve</td>
+		<td>Jackson</td>
+		<td>94</td>
+	</tr>
+</table>
+
+
+
+
+<!--Adding a Border
+	set using CSS border property; if none specified, will display without border (remember to define for both table and table cells-->
+table, th, td {
+	border: 1px solid black;
+}
+
+<!--Collapsed Borders
+	add CSS border-collapse property; borders collapse into one border-->
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+<!--Adding Cell Padding
+	use CSS padding property; space between cell content and its borders; if not specified, displayed without padding-->
+th, td {
+	padding: 15px;
+}
+
+<!--Left-align Headings
+	use CSS text-align property; left-align table headings-->
+th {
+	text-align: left;
+}
+
+<!--Adding Border Spacing
+	use CSS border-spacing property; space between cells (has no effect with collapsed borders)-->
+table {
+	border-spacing: 5px;
+}
+
+<!--Cells that Span Many Columns
+	use colspan attribute; make a cell span more than one column-->
+<table style="width: 100%">
+	<tr>
+		<th>Name</th>
+		<th colspan="2">Telephone</th>
+	</tr>
+	<tr>
+		<td>Bill Gates</td>
+		<td>55577854</td>
+		<td>55577855</td>
+	</tr>
+</table>
+
+<!--Cells that Span Many Rows
+		use rowspan attribute; make a cell span more than one row-->
+<table style="width: 100%">
+	<tr>
+		<th>Name:</th>
+		<td>Bill Gates</td>
+	</tr>
+	<tr>
+		<th rowspan="2">Telephone:</th>
+		<td>55577854</td>
+	</tr>
+	<tr>
+		<td>55577855</td>
+	</tr>
+</table>
+
+<!--Adding a Caption
+	use <caption> tag; add a caption to a table; <caption> tag must be inserted immediately after <table> tag-->
+<table style="width: 100%">
+	<caption>Monthly savings</caption>
+	<tr>
+		<th>Month</th>
+		<th>Savings</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>$100</td>
+	</tr>
+	<tr>
+		<td>February</td>
+		<td>$50</td>
+	</tr>
+</table>
+
+<!--A Special Style for One Table
+	add id attribute to table; define special style for special table-->
+<table id="t01">
+	<tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+		<th>Age</th>
+	</tr>
+	<tr>
+		<td>Eve</td>
+		<td>Jackson</td>
+		<td>94</td>
+	</tr>
+</table>
+
+table#t01 {
+	width: 100%
+	background-color: #f1f1c1
+}
+<!--special defined style-->
+table#t01 tr:nth-child(even)	{
+	background-color: #eee;
+}
+table#t01 tr:nth-child(odd)		{
+	background-color: #fff;
+}
+table#t01 th 					{
+	color: white;
+	background-color: black;
+}
+<!--adding more styles-->

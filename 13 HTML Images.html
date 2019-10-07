@@ -1,0 +1,120 @@
+<!-- HTML Images
+	Syntax
+		<img> tag defines images; tag is empty & only contains attributes
+		src attribute specifies the URL of the image
+	alt Attribute provides alternate text for image if not viewable -->
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+<img src="img_girl.jpg" alt="Girl in a jacket">
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+
+
+
+<!--Image Size - Width and Height
+	style attribute specifies the width and height, measured in pixels-->
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width: 500px; height: 600px;"> <!--(recommended format)-->
+or
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+	width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+<img src="html5.gif" alt="HTML5 Icon" style="width: 128px;height:128px;">
+
+</body>
+</html>
+
+
+
+
+<!--Images in Another Folder 
+	if not specified, browser expects to find image in same folder as web page; however, images are commonly stored in sub-folders which name must be included in src attribute -->
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+
+
+
+<!-- Images on Another Server 
+	website with images stored image server; access to images from any web address -->
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+
+
+
+<!--Animated Images (animated GIFs) -->
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+
+
+
+<!--Image as a Link 
+	<img> tag inside of <a> tag -->
+<a href="default.asp">
+	<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+
+
+
+
+<!--Image Floating 
+	CSS float property lets image float left or right of text -->
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+
+
+
+<!--Image Maps 
+	<map> tag defines an image-map, which has clickable areas -->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+	<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+	<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+	<area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+
+
+
+<!--Background Image
+	CSS property background-image: displays image on an HTML element -->
+<body style="background-image: url('clouds.jpg');">
+
+<h2>Background Image</h2>
+
+</body>
+<!--specify on BODY element to add a background image on a web page-->
+
+<body>
+
+<p style="background-image: url('clouds');">
+...
+</p>
+
+</body>
+<!--specify on P element to add a background image on a paragraph -->
+
+
+
+
+<!-- The <picture> ELement 
+	adds flexibility when specifiying image resources; contains a no. of <source> elements, each referring to different image sources; browser chooses best fitting image for view/device; browser uses first <source> element with matching attribute values -->
+<picture>
+	<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+	<source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+	<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+<!--show one picture if viewport is a min of 650px, another if not but larger than 465 px-->

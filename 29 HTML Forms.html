@@ -1,0 +1,68 @@
+<!--<form> Element; defines a form that's used to collect user input. HTML form contains form elements. form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more-->
+<form>
+
+<b><u>Reservation Guest Information</u></b>
+
+</form>
+
+<!--<input> Element; most important form element. can be displayed several ways, depending on the type attribute
+
+Examples:
+Type 					Description
+<input type="text">		Defines a one line text input field
+<input type="radio">	Defines a radio button (select 1 of many choices)
+<input type="submit">	Defines a submit button (for submitting form)-->
+
+<!--Text Input-->
+<form>
+	First name:<br>
+	<input type="text" name="firstname"><br>
+	Last name:<br>
+	<input type="text" name="lastname">
+</form>
+
+<!--Radio Button Input-->
+<form>
+	<input type="radio" name="gender" value="male" checked> Male<br>
+	<input type="radio" name="gender" value="female"> Female<br>
+	<input type="radio" name="gender" value="other"> Other
+</form>
+
+<!--The Submit Button-->
+<form action="/action_page.php">
+	First name:<br>
+	<input type="text" name="firstname" value="Briana"><br>
+	Last name:<br>
+	<input type="text" name="lastname" value="Hunter"><br><br>
+	<input type="submit" value="Submit">
+</form>
+
+<!--The Action Attribute; defines the action to be performed when form is submitted, form data is normally sent to a web page on the server when the user clicks on the submit button-->
+<form action="/action_page.php">
+
+<!--The Target Attribute-->
+<form action="/action_page.php" target="_blank">
+
+<!--The Method Attribute-->
+<form action="/action_page.php" method="get">
+
+<!--The Name Attribute-->
+<form action="/action_page.php">
+	First name:<br>
+	<input type="text" value="Soul"><br>
+	Last name:<br>
+	<input type="text" name="lastname" value="Mate"><br><br>
+	<input type="submit" value="Submit">
+</form>
+
+<!--Grouping Form Data with <fieldset>-->
+<form action="/action_page.php">
+	<fieldset>
+		<legend>Log In Here:</legend>
+		Email:<br>
+		<input type="text" name="firstname" value="BrianaHunter@email.com"><br>
+		Password:<br>
+		<input type="text" name="lastname" value="******"><br><br>
+		<input type="submit" value="Submit">
+	</fieldset>
+</form>

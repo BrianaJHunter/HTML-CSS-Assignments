@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>How Do You Like Your Iced Tea? <output id="result"></output></p>
+<button onclick="sweetened()">Sweetened</button>
+<button onclick="unsweetened()">Unsweetened</button>
+
+<script>
+var w;
+
+function sweetened() {
+	if (typeof(Worker) !== "undefined") {
+		if (typeof(w) == "undefined") {
+			w = new Worker("demo_workers.js");
+		}
+		w.onmessage = function(event) {
+			document.getElementById("result").innerHTML = event.data;
+		};
+	} else {
+		document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+	}
+}
+
+function unsweetened() {
+	w.terminate();
+	w = undefined;
+}
+</script>
+
+</body>
+</html>

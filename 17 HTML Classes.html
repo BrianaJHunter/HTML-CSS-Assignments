@@ -1,0 +1,95 @@
+<!--class Attribute
+	used to define equal styles for elements with the same calls name; same format and style-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.cities {
+	background-color: black;
+	color: yellow;
+	margin: 20px;
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="cities">
+	<h2>Kingston</h2>
+	<p>Kingston is the capital of Jamaica and home to one of two of the island's airports.</p>
+</div>
+
+<div class="cities">
+	<h2>Montego Bay</h2>
+	<p>Commonly referred to as MoBay, this booming city houses ports, beautiful beaches, luxury resorts, and an easily accesible airport.</p>
+</div>
+
+<div class="cities">
+	<h2>Ocho Rios</h2>
+	<p>Ocho Rios is home to one of the island's many breathtaking natural wonders, the popular Dunns River Falls.</p>
+</div>
+
+</body>
+</html>
+<!--three <div> elements pointing to same class name-->
+
+<!--class Attribute on Inline Elements-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span.note {
+	font-size: 120%;
+	color: green;
+}
+</style>
+</head>
+<body>
+
+<h1>Popular <span class="note">Jamaica</span> Destinations</h1>
+<p>See all these <span class="note">beautiful</span> cities have to offer.</p>
+
+</body>
+</html>
+
+<!--Select Elements With a Specific Class
+	write a period followed by the name of the class-->
+<style>
+	.city {
+		background-color: green;
+		color: white;
+		padding: 10px;
+	}
+</style>
+
+
+<h2 class="city">Negril</h2>
+<p>Rick's Cafe, a tourist favorite, is a 35 ft high bar and grill with breathtaking water views. Be sure to visit Seven Mile Beach. Grab a drink or bite to eat along the beach in the Long Bay area, many all-inclusive; don't forget to explore the beautiful lagoon.</p>
+
+<h2 class="city">St. Ann</h2>
+<p>Home of the Nine Mile district and birthplace of reggae music legend and philanthropist, Robert Nesta Marley.</p>
+
+<h2 class="city">Portmore</h2>
+<p>Visit Two Sisters Cave and Hellshire Beach to get your water fix.</p>
+
+<!--Multiple Classes
+	multiple class names are separated by a space-->
+<h2 class="city main">St. Mary</h2>
+<h2 class="city">Portmore</h2>
+<h2 class="city">Clarendon</h2>
+<!--style elements with class name "city" and "main"; line 78 h2 belongs to both classes-->
+
+<!--Different Tags Can Share Same Class (thereby sharing styles)-->
+<h2 class="city">St. Ann Parish</h2>
+<p class="city">Mandeville</p>
+
+<!--Using The class Attribute in JavaScript
+	access elements with a specified class name using getElementsByClassName() method-->
+<script>
+function myFuntion() {
+	var x = document.getElementsByClassName("city");
+	for (var i = 0; i < x.length; i++) {
+		x[i].style.display = "none"
+	}
+}
+</script>

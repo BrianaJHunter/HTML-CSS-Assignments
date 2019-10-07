@@ -1,0 +1,130 @@
+<!--using HTML & css to automatically resize, hide, shrink or enlarge a site for device optimization-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--sets viewport of page and gives browser instructions on how to control dimensions/scaling-->
+
+<!--Responsive Images - when width property set to 100%, image will be responsive and scale up and down-->
+
+<img src="img_girl.jpg" style="width: 100%;">
+<!--width property-->
+
+<img src="img_girl.jpg" style="max-width: 100%; height: auto;">
+<!--max-width property; image will scale down when needed but never scale up to be larger than original size-->
+
+<picture>
+	<source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+	<source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+	<source srcset="flowers.jpg">
+	<img src="img_smallflower.jpg" alt="flowers">
+</picture>
+<!--picture element allows defining different images for different browser window sizes-->
+
+
+<style>
+#myHeader {
+	color: green;
+}
+</style>
+
+
+
+
+<center><h1 style="font-size: 10vw" id="myHeader">JAMAICA</h1>
+<!--vw=viewport width; text size follows size of browser window-->
+
+
+
+<style>
+.left, .right {
+	float: left;
+	width: 20%; /*width is 20% by default*/
+}
+
+.main {
+	float: left;
+	width: 60%; /*width is 60% be default*/
+}
+
+/*use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+	.left, .main, .right {
+		width: 100%; /*width is 100% when viewport is 800px or smaller-->
+	}
+}
+</style>
+<!--define different styles for different browser sizes-->
+
+
+
+
+
+<!--Responsive Web Design - Frameworks -->
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3/css">
+<body>
+
+<div class="w3-container w3-green">
+	<h1>Popular cities and their hot spots!</h1>
+	<p><i><font color="red">Out of Many, One People!</font></i></p>
+</div> </center>
+
+<br>
+<br>
+
+<div class="w3-row-padding">
+	<div class="w3-third">
+		<h2>>Kingston</h2>
+		<p>Kingston is the capital of Jamaica.</p>
+		<p>The most populated city is home to one out of two of the island's airports.</p>
+	</div>
+
+	<div class="w3-third">
+		<h2>>Montego Bay</h2>
+		<p>Often referred to as "MoBay" for short.</p>
+		<p>There are caves, ports, beautiful beaches, luxury resorts, golf courses, and the island's remaining airport.</p>
+	</div>
+
+	<div class="w3-third">
+		<h2>>Ocho Rios</h2>
+		<p>This bustling city is often referred to as "Ochie" for short.</p>
+		<p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+	</div>
+
+</body>
+</html>
+<!-- W3.CSS for responsive style sheets-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.Bootstrapcdn.com/bootstrap.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+<script src="https://maxcdn.Bootstrapcdn.com/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>My First Bootstrap Page</h1>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			...
+		</div>
+		<div class="col-sm-4">
+			...
+		</div>
+		<div class="col-sm-4">
+		...
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+<!--Bootstrap; popular framework to make responsive web pages; uses HTML, CSS and jQuery-->

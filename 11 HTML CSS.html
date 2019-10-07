@@ -1,0 +1,151 @@
+<!-- Cascading Style Sheets; desribes how elements are displayed on screen, paper, or other media; can control layout of multiple web pages at once; added in 3 ways - inline, internal, external -->
+
+
+
+
+<h1 style="color: white;"><u>The Bougie Hippy</u></h1>
+<!-- Inline CSS - applies a unique style to a single HTML elements; uses the style attribute of an HTML element -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body	{background-color: powderblue;}
+h1		{color: blue;}
+p 		{color: silver;}
+</style>
+</head>
+<body>
+
+<h1>*Fashion:</h1>
+<p style="color: silver;">My honest take on all things fashion.</p>
+
+</body>
+</html>
+<!-- Internal CSS - defines a style for a single HTML page; defined in the <head> section of an HTML page, within a <style> element -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>*Lifestyle:</h1>
+<p style="color: silver;">Enjoy these awesome lifestyle hacks.</p>
+
+</body>
+</html>
+<!-- External CSS - defines the style for many HTML pages; external style sheets allow you to change the look of an entire site by changing one file; add a link in the <head> section of the HTML page -->
+
+<!-- "styles.css"
+body {
+	background-color: powderblue;
+}
+h1 	{
+	color: blue;
+}
+p {
+	color: silver;
+}
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+	color: blue;
+	font-family: verdana;
+	font-size: 300%
+}
+p {
+	color: white;
+	font-family: courier;
+	font-size: 160%
+}
+</style>
+</head>
+<body>
+
+<h1>*Music:</h1>
+<p style="color: silver;">A personalized look at my music playlists.</p>
+
+</body>
+</html>
+<!-- CSS Fonts; color - text color, font family - font type, font size - text size -->
+
+
+
+
+<!-- CSS Border
+p {
+	border: 1px solid white
+}
+-->
+
+
+
+
+<!-- CSS Padding - space between text and border
+p {
+	border: 1px solid silver;
+	padding: 30px;
+}
+-->
+
+
+
+
+<!-- CSS Margin - space outside the border
+p {
+	border: 1px solid powderblue;
+	margin: 50px;
+}
+-->
+
+
+
+
+<p id="p01">I am different</p> 
+<!-- The id Attribute - specific style for one special element -->
+
+<!--  defines style for the element's specific id
+#p01 {
+	color: blue;
+}
+-->
+
+
+
+
+<p class="error">I am different</p>
+<!--The class Attribute - defines style for special types of elements-->
+
+
+<!-- defines style for the element's specific specific class
+p.error {
+	color: red;
+}
+-->
+
+
+
+
+<!-- External References - references external style sheets with a full URL or a path relative to the current web page -->
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+<!--uses a full URL -->
+
+<link rel="stylesheet" href="/html/styles.css">
+<!-- links a sheet located in the html folder on current web site -->
+
+<link rel="stylesheet" href="styles.css">
+<!-- links a sheet located in the same folder as the current page -->
+

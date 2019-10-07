@@ -1,0 +1,117 @@
+<!--HTML Links are Hyperlinks (can click a link & jump to another doc); hyperlinks are defined by <a> tag-->
+<a href="url">all posts</a>
+
+<a href="https://www.thebougiehippy.com/blog/categories/fashion">fashion</a>
+<!-- HTML Link - Syntax; links are defined with <a> tag 
+	href - specifies destination address (https://www...) of the link
+	link text - visible part (Visit our...)
+	clicking link text sends you to specified address -->
+
+<a href="www.thebougiehippy.com/blog/categories/lifestyle">lifestyle</a>
+<!-- HTML link above uses a relative URL (without https://www...), absolute URL uses full web address (with https://www...) -->
+
+
+<a href="www.thebougiehippy.com/blog/categories/music">music</a>
+
+<style>
+a:link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: pink;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: skyblue;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
+</style>
+<!--HTML Link Colors
+	default: 	unvisited - underlined and blue
+				visited - underlined and purple
+				active - underlined and red -->
+
+<style>
+a:link, a:visited {
+	background-color: #BADA55;
+	color: white;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: skyblue;
+}
+</style>
+<!-- links are often styled as buttons, by using CSS -->
+
+
+
+
+<!--		*** N/A FOR THIS WEBPAGE ***
+<a href="https://w3school.com/" target="_blank">music</a>
+-->
+<!-- The target Attribute; specifies where to open linked document and can have one of the following values
+	_blank - opens in new window/tab
+	_self - opens in same window/tab as clicked <default)
+	_parent - opens in parent frame
+	_top - opens in full body of the window
+	framename - opens in a named frame -->
+
+
+
+
+<!-- 		*** N/A FOR THIS WEBPAGE ***
+<a href="default.asp">
+	<img src="smiley.gif" alt="HTML tutorial"
+style="width: 42px; height: 42px; border:0;">
+</a> 
+-->
+<!-- Images as Link; border:0; prevents borders from displaying around images -->
+
+
+
+
+<!--		*** N/A FOR THIS WEBPAGE *** 
+<a href="https://wwww.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+-->
+<!-- Link Titles; specifies extra info about an element; info is often shown as tooltip text when mouse moves over element -->
+
+
+
+
+<h2 id="C4" style="color: gray;">The Bougie Hippy :: fashion write-ups</h2>
+
+<a href="#C4">jump to music</a> <font color="gray">or</font> <a href="html_demo.html#C4">jump to lifestyle</a>
+<!--Create a Bookmark; allows readers to jump to specific parts of Web pg; must create bookmark first then add a link to it-->
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+			<!-- External Paths -->
+<a href="https://www.TheBougieHippy.com/blog/categories/fashion">fashion</a>
+	<!-- uses a full URL to link to a web pg-->
+<a href="/html/default.asp">lifestyle</a>
+	<!-- links to a pg located in the html folder on the current site-->
+<a href="default.asp">music</a>
+	<!-- links to pg located in the same folder as current page-->
